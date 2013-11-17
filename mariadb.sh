@@ -15,7 +15,7 @@ then
     echo "hell"
     /etc/init.d/mysql stop
     cp /etc/my.cnf.d/server.cnf /tmp/
-    sed -i -e "s/[mysqld]/\ncharacter-set-utf8/" /etc/my.cnf.d/server.cnf
+    #sed -i -e "s/[mysqld]/\ncharacter-set-utf8/" /etc/my.cnf.d/server.cnf
     /usr/bin/mysqladmin -u root password 'aug3108a'
     /etc/init.d/mysql start
 else

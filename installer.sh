@@ -26,5 +26,5 @@ fi
 #yum -y install nkf
 
 
-#source tmux.sh
+source tmux.sh
 source mariadb.sh
