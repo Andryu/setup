@@ -3,7 +3,7 @@
 # update : 2013/11/16
 # name   : tmux 
 
-cd /tmp/download/
+cd /tmp/software/
 
 # libevent
 echo "libevent"

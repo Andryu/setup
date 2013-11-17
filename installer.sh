@@ -9,22 +9,22 @@ if [ ${EUID:-${UID}} != 0 ]; then
     exit
 fi
 
-
-
-#yum -y update
-#yum -y install yum-cron
-#/etc/rc.d/init.d/yum-cron start
-#chkconfig yum-cron on
-#yum -y groupinstall "Base" "Development tools"
-#
+yum -y update
+yum -y install yum-cron
+/etc/rc.d/init.d/yum-cron start
+chkconfig yum-cron on
+yum -y groupinstall "Base" "Development tools"
+yum -y install nkf
 ## SELinux 
 #if [ `getenforce` == Enforcing ]; then
 #    `setenforce` 0
 #    sed "s/SELINUX=.*/SELINUX=disabled/" /etc/selinux/config
 #fi
 #
-#yum -y install nkf
 
-
+source common.sh
 source tmux.sh
 source mariadb.sh
+source cpanm.sh
+#source module.sh
+source redis.sh
