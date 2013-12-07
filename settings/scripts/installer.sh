@@ -22,6 +22,8 @@ yum -y install nkf
 #fi
 #
 
+mkdir /var/www/
+ln -s /home/vagrant/
 source common.sh
 source tmux.sh
 source mariadb.sh
