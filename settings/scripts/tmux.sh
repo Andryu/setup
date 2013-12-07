@@ -1,7 +1,4 @@
 #!/bin/bash
-# author : shunsuke andoh
-# update : 2013/11/16
-# name   : tmux 
 
 cd /tmp/software/
 

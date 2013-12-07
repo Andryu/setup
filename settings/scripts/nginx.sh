@@ -1,10 +1,6 @@
 #!/bin/sh
-# author : shunsuke andoh
-# update : 2013/11/16
-# name   : nginx
 
 yum -y install pcre pcre-devel
-
 # nginxの実行ユーザーを作成
 useradd -s /sbin/nologin nginx
 
