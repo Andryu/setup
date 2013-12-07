@@ -1,7 +1,4 @@
 #!/bin/sh
-# author : shunsuke andoh
-# update : 2013/11/16
-# name   : module 
 cpanm -f CGI
 #cpanm -f DBI
 #cpanm -f DBIx::Simple

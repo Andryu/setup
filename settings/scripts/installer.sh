@@ -1,7 +1,4 @@
 #!/bin/bash
-# author : shunsuke andoh
-# update : 2013/11/16
-# name   : installer
 
 # check root
 if [ ${EUID:-${UID}} != 0 ]; then
@@ -22,8 +19,9 @@ yum -y install nkf
 #fi
 #
 
-mkdir /var/www/
-ln -s /home/vagrant/
+# シンボリックリンク作成
+#mkdir /var/www/
+#ln -s /home/vagrant/
 source common.sh
 source tmux.sh
 source mariadb.sh
