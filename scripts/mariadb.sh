@@ -11,6 +11,6 @@ else
 fi
 
 cp /etc/my.cnf.d/server.cnf /tmp/
-cp cnf/server.cnf /etc/my.cnf.d/server.cnf 
+cp ../cnf/server.cnf /etc/my.cnf.d/server.cnf 
 /usr/bin/mysqladmin -u root password 'aug3108a'
 

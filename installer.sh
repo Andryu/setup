@@ -12,16 +12,8 @@ yum -y install yum-cron
 chkconfig yum-cron on
 yum -y groupinstall "Base" "Development tools"
 yum -y install nkf
-## SELinux 
-#if [ `getenforce` == Enforcing ]; then
-#    `setenforce` 0
-#    sed "s/SELINUX=.*/SELINUX=disabled/" /etc/selinux/config
-#fi
-#
 
-# シンボリックリンク作成
-#mkdir /var/www/
-#ln -s /home/vagrant/
+
 source common.sh
 source tmux.sh
 source mariadb.sh

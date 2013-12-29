@@ -10,10 +10,11 @@ else
 fi
 
 # ExtUtils::Manifest
-cd /tmp/software
+cd /usr/local/src
 tar zxvf ExtUtils-Manifest-1.63.tar.gz
 perl Makefile.PL
 make && make install
 
 # cpanm
 perl cpanm App::cpanminus
+cd -
