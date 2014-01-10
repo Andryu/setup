@@ -9,18 +9,23 @@ if [ ${EUID:-${UID}} != 0 ]; then
     exit
 fi
 
-cd /usr/local/src
+cd ${SET_UP_DIR}/software 
 
 # libevent
-echo "libevent"
-tar xvzf libevent-2.0.21-stable.tar.gz
-./libevent-2.0.21-stable/configure
-make && make install
-echo /usr/local/lib > /etc/ld.so.conf.d/libevent.conf
-ldconfig
+if rpm -qa | grep "libevent"
+then
+    echo "already exist libevent"
+else
+    tar xvzf libevent-2.0.21-stable.tar.gz
+    ./libevent-2.0.21-stable/configure
+    make && make install
+    echo /usr/local/lib > /etc/ld.so.conf.d/libevent.conf
+    ldconfig
+fi
 
 # tmux
 echo "tmux"
 tar xvzf tmux-1.8.tar.gz
 ./tmux-1.8/configure
 make && make install
+cd -

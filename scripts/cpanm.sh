@@ -17,4 +17,12 @@ make && make install
 
 # cpanm
 perl cpanm App::cpanminus
+
+cpanm -i -n CGI
+cpanm -i -n Test::More
+cpanm -i -n JSON
+cpanm -i -n Redis
+cpanm -i -n Task::Catalyst
+cpanm -i -n Devel::Cover 
+cpanm -i -n Pod::Coverage
 cd -

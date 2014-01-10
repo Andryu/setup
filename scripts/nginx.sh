@@ -4,16 +4,15 @@ yum -y install pcre pcre-devel
 # nginxの実行ユーザーを作成
 useradd -s /sbin/nologin nginx
 
-cd /usr/local/src
+cd ${SET_UP_DIR}/software 
 tar zxvf zlib-1.2.8.tar.gz
 tar zxvf openssl-1.0.1c.tar.gz
 
 mkdir /var/{log,run}/nginx
 chown nginx:nginx /var/{log,run}/nginx
-tar zxvf /usr/local/src/nginx-1.5.6.tar.gz
+tar zxvf nginx-1.5.6.tar.gz
 cd nginx-1.5.6
 
-# /usr/local/nginxにインストール
 ./configure \
 --prefix=/usr/local/nginx \
 --user=nginx \

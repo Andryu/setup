@@ -5,4 +5,4 @@
 yum -y install wget gcc make
 yum -y install ncurses ncurses-devel
 yum -y install vim-enhanced
-cp software/*.tar.gz /usr/local/src/
+#cp software/*.tar.gz /usr/local/src/
