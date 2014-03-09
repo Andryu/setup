@@ -27,4 +27,3 @@ tar xvzf /usr/local/src/tmux-1.8.tar.gz
 cd /usr/local/src/tmux-1.8
 ./configure
 make && make install
-cd -

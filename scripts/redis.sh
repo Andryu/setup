@@ -8,4 +8,3 @@ mkdir /etc/redis
 cp ${SET_UP_DIR}/cnf/redis.conf /etc/redis/redis.conf
 cp ${SET_UP_DIR}/cnf/sysconfig_redis /etc/sysconfig/redis
 cp ${SET_UP_DIR}/cnf/init_redis-server /etc/init.d/redis-server
-cd -

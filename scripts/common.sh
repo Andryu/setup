@@ -6,5 +6,4 @@ yum -y install yum-cron
 /etc/rc.d/init.d/yum-cron start
 chkconfig yum-cron on
 yum -y groupinstall "Base" "Development tools"
-yum -y install nkf
-cp software/*.tar.gz /usr/local/src/
+yum -y install nkf 

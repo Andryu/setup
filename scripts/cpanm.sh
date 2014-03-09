@@ -8,6 +8,7 @@ curl -LOk http://xrl.us/cpanm
 chmod +x cpanm
 
 cpanm -i -n local::lib
+cpanm -i -n YAML
 cpanm -i -n CGI
 cpanm -i -n JSON
 cpanm -i -n Redis
@@ -19,7 +20,7 @@ cpanm -i -n Task::Catalyst
 cpanm -i -n Test::More
 cpanm -i -n Test::Harness
 cpanm -i -n Test::Mock::Guard
-cpanm -i -n Test::Mock::Object
-cpanm -i -n Test::Mock::mysqld
+cpanm -i -n Test::MockObject
+cpanm -i -n Test::mysqld
 cpanm -i -n Devel::Cover 
 cpanm -i -n Pod::Coverage
