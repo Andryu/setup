@@ -1,28 +1,26 @@
 #!/bin/sh
-# author : shunsuke andoh
-# update : 2013/11/16
-# name   : cpanm 
-
-if yum list | grep perl-CPAN ; then
-echo "already CPAN"
-else
-    yum install perl-CPAN
-fi
-
-# ExtUtils::Manifest
-cd /usr/local/src
-tar zxvf ExtUtils-Manifest-1.63.tar.gz
-perl Makefile.PL
-make && make install
+yum -y install perl-devel
+yum -y install mysql-devel
 
 # cpanm
-perl cpanm App::cpanminus
+mkdir ~/bin && cd ~/bin/
+curl -LOk http://xrl.us/cpanm
+chmod +x cpanm
 
+cpanm -i -n local::lib
+cpanm -i -n YAML
 cpanm -i -n CGI
-cpanm -i -n Test::More
 cpanm -i -n JSON
 cpanm -i -n Redis
+cpanm -i -n Data::Dumper
+cpanm -i -n DBD::mysql
+cpanm -i -n DBI
+cpanm -i -n DBIx::Simple
 cpanm -i -n Task::Catalyst
+cpanm -i -n Test::More
+cpanm -i -n Test::Harness
+cpanm -i -n Test::Mock::Guard
+cpanm -i -n Test::MockObject
+cpanm -i -n Test::mysqld
 cpanm -i -n Devel::Cover 
 cpanm -i -n Pod::Coverage
-cd -
