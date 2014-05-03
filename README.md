@@ -18,3 +18,6 @@ cd setup
 ```
 
 # History
+
+* v1.0.0
+  maintenance my.cnf, add innodb_buffer_pool_size, slow_query,bin_log etc
