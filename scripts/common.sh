@@ -7,3 +7,5 @@ yum -y install yum-cron
 chkconfig yum-cron on
 yum -y groupinstall "Base" "Development tools"
 yum -y install nkf 
+yum -y install zlib zlib-devel
+yum -y install openssl-devel

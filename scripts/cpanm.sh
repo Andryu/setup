@@ -3,7 +3,8 @@ yum -y install perl-devel
 yum -y install mysql-devel
 
 # cpanm
-mkdir ~/bin && cd ~/bin/
+#mkdir ~/bin && cd ~/bin/
+cd /usr/bin/
 curl -LOk http://xrl.us/cpanm
 chmod +x cpanm
 
